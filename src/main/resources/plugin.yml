@@ -1,0 +1,11 @@
+name: Disqualified
+version: 1.0.5-STABLE
+main: club.flame.disqualified.Disqualified
+description: All in one Network Core
+website: dsc.gg/flameclubdevelopment
+softdepend:
+  - PlaceholderAPI
+  - MVdWPlaceholderAPI
+authors:
+  - HCFAlerts
+  - FlameClubDevelopment
