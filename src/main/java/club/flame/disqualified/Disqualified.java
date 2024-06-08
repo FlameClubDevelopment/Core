@@ -99,7 +99,7 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate(" "));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cLicense Info"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Status&f: &aActivated"));
-        Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4User&f: ! Traduciendo &7(hcfalerts)"));
+        Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4User&f: ! Traduciendo &7(hcfalerts) and themanfurious"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4License&f: A890F-99NKL-O008C-HYH34"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate(" "));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cSpigot Info"));
