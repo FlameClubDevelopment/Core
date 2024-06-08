@@ -4,7 +4,7 @@ NETWORK:
   JOIN-SOUND: 'NOTE_PLING'
   JOIN-MESSAGE: # Put {C} before the text to center the line
     - '&7&m----------------------------------------------------'
-    - '&4Welcome &fto &4FireMC Network'
+    - '&4Welcome &fto &4ServerName Network'
     - '&f '
     - '&4 ✦ Store: &f<store>'
     - '&4 ✦ Discord: &f<discord>'
@@ -32,7 +32,7 @@ NETWORK:
   SERVER-TPS:
     MESSAGE:
       - '&7&m---------------------'
-      - '&7 * &4Tps&7: &f%realtps_tps%'
+      - '&7 * &4Tps&7: &f%realtps%'
       - '&7 * &4Uptime&7: &f<uptime>'
       - '&7 * &4Max Memory&7: &f<maxmemory>&4MB'
       - '&7 * &4All Memory&7: &f<allmemory>&4MB'
@@ -80,7 +80,7 @@ COMMANDS:
         - '&4Do NOT log out!'
         - '&cIf you do, you will be banned'
         - '&4Please download &4&lTeamSpeak &4and join'
-        - '&4ts.firemc.us'
+        - '&4ts.servername.net'
   LIST:
     RANK-SEPARATOR: '&f,'
     PLAYER-SEPARATOR: '&f,'
@@ -92,83 +92,14 @@ COMMANDS:
       - '&aOnline'
       - '<players_online>'
   SOCIAL:
-    STORE: 'store.firemc.us'
-    TWITTER: 'https://twitter.com/@FireMCUS'
-    DISCORD: 'http://discord.firemc.us'
-    TEAMSPEAK: 'ts.firemc.us'
+    STORE: 'store.servername.net'
+    TWITTER: 'https://twitter.com/@ServerNameNET'
+    DISCORD: 'https://discord.servername.net'
+    TEAMSPEAK: 'ts.servername.net'
     MESSAGES: '&4<command>&7: &f<social>'
   BROADCAST: '&7[&4&l<server>&7] &f<text>'
   TELEPORT-MESSAGES:
     TP: '&aYou have been teleported to &f<target>'
     TOP: '&aYou have been teleported to the top.'
     TPHERE:
-      SENDER: '&aYou have been teleported &f<target> &ato you'
-      TARGET: '&f<player> &ateleported you to his location.'
-    TPALL: '&aAll players has been teleport to &f<player>'
-    TPPOS: '&aYou has been teleported to &f<x>&ax &f<y>&ay &f<z>&az'
-  FIX-MESSAGES:
-    HAND: '&aYou repaired the item in your hand'
-    ALL: '&aYou repaired all your items'
-  RENAME: '&aYou name your item to <text>'
-  CLEAR-MESSAGES:
-    DEFAULT: '&aYou cleaned up your inventory'
-    OTHER:
-      TARGET: '&aYour inventory was cleared by <player>'
-      SENDER: '&aYou cleared the inventory of <target>'
-  LORE-MESSAGES:
-    ADD: '&aYou added a lore to your item successfully'
-    REMOVE: '&aYou remove a lore to your item successfully'
-  SPEED-MESSAGES:
-    WALK: '&aYou set your walk speed to <amount>'
-    FLY: '&aYou set your fly speed to <amount>'
-  FEED-MESSAGE: '&aSuccessfully regenerate food'
-  FLY-MESSAGE:
-    DEFAULT: '&7You have <status> &7your flight mode'
-    OTHER:
-      SENDER: '&7You have <status> &a<target>''s &7flight mode.'
-      TARGET: '&aYour flight mode has been <status> &7by &a<sender>''s'
-  HEAL-MESSAGES:
-    DEFAULT: '&aSuccessfully regenerate heal'
-    OTHER: '&f<target>''s &aheal successfully regenerate'
-  SKULL-MESSAGE: '&a<target>''s head was added to your inventory successfully'
-  SKULL-CLICK-MESSAGE: '&7You clicked <player>''s head!'
-  GAMEMODE-MESSAGES:
-    DEFAULT: '&aYour update your gamemode to &f<gamemode>'
-    OTHER: '&aYou updated &f<target>''s &agamemode to &f<gamemode>'
-  PING-MESSAGES:
-    SOUND: 'NOTE_PLING'
-    DEFAULT: '&aYour ping is&7: <ping>ms'
-    OTHER: '&a<target>''s &fping is&7: <ping>ms'
-  TIME-MESSAGE: "&aYour time has been updated to <timeSetting>"
-  GEO-IP-MESSAGE: '&f<player>''s &acountry is &f<country>'
-  COINS-MESSAGE:
-    DEFAULT: '&aYou have &2<amount> &acoins.'
-    TARGET: '&2<target> &ahas &2<amount> &acoins.'
-    MANAGER:
-      SET: '&aYou set <target>''s coints to <amount>'
-      ADD-REMOVE: '&aYou update <target>''s coins from <coins> to <amount>'
-  GRANT:
-    PERM: '&aYou have been permanently granted to <rank>.'
-    TEMP: '&aYou have been permanently granted to <rank> for <time>.'
-    GRANT-MENU:
-      RANK:
-        - '&aClick to grant &f<name> &a to <rank> rank!'
-      GRANTS:
-        LORE:
-          - '&7&m------------------------'
-          - '&aAdded by &7» &f<addedBy>'
-          - '&aAdded date &7» &f<addedDate>'
-          - '&aGrant duration &7» &f<duration>'
-          - '&aGrant reason &7» &f<reason>'
-          - '&aActive &7» &f<active>'
-          - '&aExpire &7» &f<expire>'
-          - '<not-expired>'
-          - '<if-removed>'
-          - '&7&m------------------------'
-        NOT-EXPIRED:
-          - ''
-          - '&cRight click to remove this grant!'
-        IF-REMOVED:
-          - ''
-          - '&aRemoved by &7 &f<removedBy>'
-          - '&aRemoved date &7 &f<removedDate>'
+      SENDER: '&aYou'
