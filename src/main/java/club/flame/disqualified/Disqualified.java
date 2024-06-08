@@ -144,7 +144,7 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.CHAT_BAR);
         Bukkit.getConsoleSender().sendMessage(CC.translate("&4Disqualified ✖ &8- &fv" + getDescription().getVersion()));
         Bukkit.getConsoleSender().sendMessage(CC.translate(" "));
-        Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Author&f: " + getDescription().getAuthors()));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Author&f: " + getDescription().getAuthors() + ", themanfurious, ! Traduciendo"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Mongo&f: " + (mongoManager.isConnected() ? "&aEnabled" : "&cDisabled")));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Redis&f: " + (redisManager.isActive() ? "&aEnabled" : "&cDisabled")));
         Bukkit.getConsoleSender().sendMessage(CC.CHAT_BAR);
