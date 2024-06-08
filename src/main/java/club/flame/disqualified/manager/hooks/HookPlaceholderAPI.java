@@ -6,6 +6,8 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
+import java.util.Objects;
+
 /**
  * Re-Work Code by HCFAlerts
  * Project: Disqualified
@@ -31,7 +33,7 @@ public class HookPlaceholderAPI extends PlaceholderExpansion {
 
     @Override
     public String getAuthor() {
-        return "Elb1to";
+        return ("themanfurious");
     }
 
     @Override
@@ -44,23 +46,23 @@ public class HookPlaceholderAPI extends PlaceholderExpansion {
 
         // %Disqualified_rank_name%
         if (identifier.equalsIgnoreCase("rank_name")) {
-            if (PlayerData.getPlayerData(player.getName()).getHighestRank().getName() == null) {
+            if (Objects.requireNonNull(PlayerData.getPlayerData(player.getName())).getHighestRank().getName() == null) {
                 return Disqualified.getInstance().getRankManager().getDefaultRank().getName();
             }
-            return PlayerData.getPlayerData(player.getName()).getHighestRank().getName();
+            return Objects.requireNonNull(PlayerData.getPlayerData(player.getName())).getHighestRank().getName();
         }
 
         // %Disqualified_rank_color%
         if (identifier.equalsIgnoreCase("rank_color")) {
-            return "&" + PlayerData.getPlayerData(player.getName()).getHighestRank().getColor().getChar();
+            return "&" + Objects.requireNonNull(PlayerData.getPlayerData(player.getName())).getHighestRank().getColor().getChar();
         }
 
         // %Disqualified_rank_prefix%
         if (identifier.equalsIgnoreCase("rank_prefix")) {
-            if (PlayerData.getPlayerData(player.getName()).getHighestRank().getPrefix() == null) {
+            if (Objects.requireNonNull(PlayerData.getPlayerData(player.getName())).getHighestRank().getPrefix() == null) {
                 return Disqualified.getInstance().getRankManager().getDefaultRank().getPrefix();
             }
-            return PlayerData.getPlayerData(player.getName()).getHighestRank().getPrefix();
+            return Objects.requireNonNull(PlayerData.getPlayerData(player.getName())).getHighestRank().getPrefix();
         }
 
         // %Disqualified_rank_name_color%
