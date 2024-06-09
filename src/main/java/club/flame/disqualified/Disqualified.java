@@ -68,14 +68,17 @@ public final class Disqualified extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        if (!this.getDescription().getName().equals("Disqualified") || !this.getDescription().getWebsite().equals("https://dsc.gg/flameclubdevelopment")
+        if (!this.getDescription().getName().equals("Disqualified")
+                || !this.getDescription().getWebsite().equals("https://dsc.gg/flameclubdevelopment")
                 || !this.getDescription().getDescription().equals("Disqualified is an all-in-one Network Core with over 20 features including optimized performance.")
-                || !this.getDescription().getAuthors().contains("HCFAlerts") || !this.getDescription().getAuthors().contains("themanfurious"))
+                || !this.getDescription().getAuthors().contains("HCFAlerts")
+                || !this.getDescription().getAuthors().contains("themanfurious")
                 || !this.getDescription().getAuthors().contains("FlameClubDevelopment")) {
             Bukkit.getServer().getPluginManager().disablePlugin(this);
             for (int i = 0; i < 100; i++) {
-                Bukkit.getServer().getConsoleSender().sendMessage("&cWhy are you changing the plugin.yml?");
+                Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cWhy are you changing the plugin.yml?"));
             }
+            return; // Ensure the method exits if the plugin is disabled
         }
 
         this.disqualifiedAPI = new DisqualifiedAPI();
@@ -95,7 +98,7 @@ public final class Disqualified extends JavaPlugin {
             restartInventoryID();
         }
         Disqualified.getInstance().setPassed(true);
-        Bukkit.getConsoleSender().sendMessage(CC.MENU_BAR); {
+        Bukkit.getConsoleSender().sendMessage(CC.MENU_BAR);
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Disqualified Core ✖ &8- &fv" + getDescription().getVersion()));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate(" "));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cLicense Info"));
@@ -105,9 +108,8 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cSpigot Info"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Spigot&f: " + getServer().getName() + "&f " + getServer().getVersion()));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Decent spigot detected&f, &ahooked in&f..."));
-        Bukkit.getConsoleSender().sendMessage(CC.MENU_BAR); {
-            kuukausi();
-        }
+        Bukkit.getConsoleSender().sendMessage(CC.MENU_BAR);
+        kuukausi();
     }
 
     private void kuukausi() {
@@ -163,7 +165,7 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "Broadcast");
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 
-        if (Bukkit.getServer().getVersion() != null) {;
+        if (Bukkit.getServer().getVersion() != null) {
             Bukkit.getConsoleSender().sendMessage(CC.translate(Lang.PREFIX + "&7[&4Disqualified&7] &aSpigot hook successfully registered."));
         }
 
@@ -245,25 +247,15 @@ public final class Disqualified extends JavaPlugin {
                 new PlayerDataLoad(),
                 new ChatListener(),
                 new ButtonListener(),
-
                 new GeneralPlayerListener(),
                 new BlockCommandListener(),
                 new GrantListener(),
                 new FreezeListener(),
                 new FreezeHandlerListener()
         );
-//        pluginManager.registerEvents(new PlayerDataLoad(), this);
-//        pluginManager.registerEvents(new ChatListener(), this);
-//        pluginManager.registerEvents(new ButtonListener(), this);
-//
-//        pluginManager.registerEvents(new GeneralPlayerListener(), this);
-//        pluginManager.registerEvents(new BlockCommandListener(), this);
-//        pluginManager.registerEvents(new GrantListener(), this);
-//        pluginManager.registerEvents(new FreezeListener(), this);
-//        pluginManager.registerEvents(new FreezeHandlerListener());
     }
 
-    private void registerListeners(Listener... listeners){
+    private void registerListeners(Listener... listeners) {
         Arrays.stream(listeners).forEach(listener -> {
             PluginManager pluginManager = Bukkit.getPluginManager();
             pluginManager.registerEvents(listener, this);
@@ -319,7 +311,6 @@ public final class Disqualified extends JavaPlugin {
                 format.append(", ").append(s);
             }
         }
-
         return format;
     }
 }
