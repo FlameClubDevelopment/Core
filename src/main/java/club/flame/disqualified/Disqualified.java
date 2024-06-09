@@ -68,9 +68,10 @@ public final class Disqualified extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        if (!this.getDescription().getName().equals("Disqualified") || !this.getDescription().getWebsite().equals("dsc.gg/flameclubdevelopment")
-                || !this.getDescription().getDescription().equals("All in one Network Core")
-                || !this.getDescription().getAuthors().contains("HCFAlerts") || !this.getDescription().getAuthors().contains("themanfurious")) {
+        if (!this.getDescription().getName().equals("Disqualified") || !this.getDescription().getWebsite().equals("https://dsc.gg/flameclubdevelopment")
+                || !this.getDescription().getDescription().equals("Disqualified is an all-in-one Network Core with over 20 features including optimized performance.")
+                || !this.getDescription().getAuthors().contains("HCFAlerts") || !this.getDescription().getAuthors().contains("themanfurious"))
+                || !this.getDescription().getAuthors().contains("FlameClubDevelopment")) {
             Bukkit.getServer().getPluginManager().disablePlugin(this);
             for (int i = 0; i < 100; i++) {
                 Bukkit.getServer().getConsoleSender().sendMessage("&cWhy are you changing the plugin.yml?");
