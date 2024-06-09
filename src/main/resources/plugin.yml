@@ -7,8 +7,6 @@ softdepend:
   - PlaceholderAPI
   - MVdWPlaceholderAPI
 authors:
-  - HCFAlerts
-  - themanfurious
   - FlameClubDevelopment
 commands:
   bc:
