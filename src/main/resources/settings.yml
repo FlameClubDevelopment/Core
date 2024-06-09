@@ -1,6 +1,6 @@
 SETTINGS:
   DEBUG: false
-  LICENSE: 'A890F-99NKL-O008C-HYH34' # Don't touch
+  LICENSE: 'Open-Source'
   PREFIX: ''
   SERVER-NAME: 'Hub-01' # for example
   SERVER-ANNOUNCE: '&8[&4✖&8] <rank><name> &fis playing on &4<server_name>&f! Use &4/play <server_name> &fto join.'
