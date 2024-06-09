@@ -94,13 +94,12 @@ public final class Disqualified extends JavaPlugin {
             restartInventoryID();
         }
         Disqualified.getInstance().setPassed(true);
-        Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("------------------------"));
+        Bukkit.getConsoleSender().sendMessage(CC.MENU_BAR); {
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Disqualified Core ✖ &8- &fv" + getDescription().getVersion()));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate(" "));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cLicense Info"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Status&f: &aActivated"));
-        Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4User&f: ! Traduciendo &7(hcfalerts) and themanfurious"));
-        Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4License&f: A890F-99NKL-O008C-HYH34"));
+        Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4License&f: Open-Source"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate(" "));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&cSpigot Info"));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Spigot&f: " + getServer().getName() + "&f " + getServer().getVersion()));
@@ -144,7 +143,7 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.CHAT_BAR);
         Bukkit.getConsoleSender().sendMessage(CC.translate("&4Disqualified ✖ &8- &fv" + getDescription().getVersion()));
         Bukkit.getConsoleSender().sendMessage(CC.translate(" "));
-        Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Author&f: " + getDescription().getAuthors() + ", themanfurious, ! Traduciendo"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Author&f: " + getDescription().getAuthors()));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Mongo&f: " + (mongoManager.isConnected() ? "&aEnabled" : "&cDisabled")));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7 • &4Redis&f: " + (redisManager.isActive() ? "&aEnabled" : "&cDisabled")));
         Bukkit.getConsoleSender().sendMessage(CC.CHAT_BAR);
