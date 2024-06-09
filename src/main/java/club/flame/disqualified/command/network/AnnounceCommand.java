@@ -23,12 +23,14 @@ public class AnnounceCommand extends BaseCommand {
 
         String rankPrefix = playerData.getHighestRank().getPrefix();
         String rankColor = playerData.getHighestRank().getColor().toString();
-        
+
+        String serverName = Disqualified.getInstance().getSettingsConfig().getString("SERVER-NAME");
+
         String message = Disqualified.getInstance().getSettingsConfig().getString("SETTINGS.SERVER-ANNOUNCE")
                 .replace("<name>", player.getName())
                 .replace("<rank>", rankColor + rankPrefix)
                 .replace("&", "§")
-                .replace("<server_name>", Lang.SERVER_NAME);
+                .replace("<server_name>", serverName);
 
         Utils.globalBroadcast(player, CC.translate(message));
     }
