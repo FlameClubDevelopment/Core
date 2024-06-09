@@ -9,9 +9,9 @@ softdepend:
   - PlaceholderAPI
   - MVdWPlaceholderAPI
 authors:
-  - HCFAlerts (! Traduciendo)
-  - FlameClubDevelopment
+  - HCFAlerts
   - themanfurious
+  - FlameClubDevelopment
 commands:
   bc:
     description: Broadcast a message to the server.
