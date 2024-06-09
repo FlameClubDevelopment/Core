@@ -1,9 +1,7 @@
 name: Disqualified
 version: 1.0.6-STABLE
 main: club.flame.disqualified.Disqualified
-description: |
-  Disqualified is an all-in-one Network Core with over 20 features including optimized performance, 
-  staff notifications, rank system, coins system, chat control, essential commands, and more.
+description: Disqualified is an all-in-one Network Core with over 20 features including optimized performance.
 website: https://dsc.gg/flameclubdevelopment
 softdepend:
   - PlaceholderAPI
