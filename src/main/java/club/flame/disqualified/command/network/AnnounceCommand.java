@@ -17,16 +17,19 @@ import org.bukkit.entity.Player;
  */
 public class AnnounceCommand extends BaseCommand {
     @Command(name = "announce", aliases = {"announceserver", "alertserver"}, permission = "core.network.announce")
-
     public void onCommand(CommandArgs command) {
         Player player = command.getPlayer();
         PlayerData playerData = PlayerData.getPlayerData(player.getUniqueId());
 
-        Utils.globalBroadcast(player, CC.translate(Disqualified.getInstance().getSettingsConfig().getString("SETTINGS.SERVER-ANNOUNCE"))
+        String rankPrefix = playerData.getHighestRank().getPrefix();
+        String rankColor = playerData.getHighestRank().getColor().toString();
+        
+        String message = Disqualified.getInstance().getSettingsConfig().getString("SETTINGS.SERVER-ANNOUNCE")
                 .replace("<name>", player.getName())
-                .replace("<rank>", playerData.getHighestRank().getPrefix())
+                .replace("<rank>", rankColor + rankPrefix)
                 .replace("&", "§")
-                .replace("<server_name>", Lang.SERVER_NAME)
-        );
+                .replace("<server_name>", Lang.SERVER_NAME);
+
+        Utils.globalBroadcast(player, CC.translate(message));
     }
 }
