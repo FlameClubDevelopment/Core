@@ -26,6 +26,7 @@ import java.util.UUID;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class RedisListener extends JedisPubSub {
     @Override
     public void onMessage(String channel, String message) {
@@ -72,10 +73,12 @@ public class RedisListener extends JedisPubSub {
                         case STAFF_CHAT: {
                             ConfigCursor configCursor = new ConfigCursor(Disqualified.getInstance().getSettingsConfig(), "SETTINGS.STAFF-CHAT");
                             String server = redisMessage.getParam("SERVER");
+                            String rank = redisMessage.getParam("RANK");
                             String player = redisMessage.getParam("PLAYER");
                             String msg = redisMessage.getParam("TEXT");
                             String format = CC.translate(configCursor.getString("FORMAT")
                                     .replace("<server>", server)
+                                    .replace("<rank>", rank)
                                     .replace("<player>", player)
                                     .replace("<text>", msg));
                             StaffLang.sendStaffChat(format);
@@ -84,10 +87,12 @@ public class RedisListener extends JedisPubSub {
                         case ADMIN_CHAT: {
                             ConfigCursor configCursor = new ConfigCursor(Disqualified.getInstance().getSettingsConfig(), "SETTINGS.ADMIN-CHAT");
                             String server = redisMessage.getParam("SERVER");
+                            String rank = redisMessage.getParam("RANK");
                             String player = redisMessage.getParam("PLAYER");
                             String msg = redisMessage.getParam("TEXT");
                             String format = CC.translate(configCursor.getString("FORMAT")
                                     .replace("<server>", server)
+                                    .replace("<rank>", rank)
                                     .replace("<player>", player)
                                     .replace("<text>", msg));
                             StaffLang.sendAdminChat(format);
