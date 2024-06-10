@@ -43,11 +43,11 @@ public class MongoManager {
                 MongoCredential mongoCredential = MongoCredential.createCredential(this.user, this.authDatabase, this.password.toCharArray());
                 this.client = new MongoClient(new ServerAddress(this.host, this.port), Collections.singletonList(mongoCredential));
                 this.connected = true;
-                Bukkit.getConsoleSender().sendMessage("§aSuccessfully connected to MongoDB.");
+                Bukkit.getConsoleSender().sendMessage("§aSuccessfully connected to §2MongoDB.");
             } else {
                 this.client = new MongoClient(new ServerAddress(this.host, this.port));
                 this.connected = true;
-                Bukkit.getConsoleSender().sendMessage("§aSuccessfully connected to MongoDB.");
+                Bukkit.getConsoleSender().sendMessage("§aSuccessfully connected to §2MongoDB.");
             }
             this.mongoDatabase = this.client.getDatabase(this.database);
             this.playerData = this.mongoDatabase.getCollection("DisqualifiedCore-PlayerData");
