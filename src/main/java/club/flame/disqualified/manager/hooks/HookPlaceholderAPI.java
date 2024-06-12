@@ -23,7 +23,7 @@ public class HookPlaceholderAPI extends PlaceholderExpansion {
 
     @Override
     public String getIdentifier() {
-        return "Disqualified";
+        return "disqualified";
     }
 
     @Override
