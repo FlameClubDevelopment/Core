@@ -1,7 +1,12 @@
 package club.flame.disqualified.utils.time;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.UUID;
 
+@Setter
+@Getter
 public class Cooldown {
 
     private UUID uniqueId;
@@ -13,7 +18,7 @@ public class Cooldown {
     private boolean notified;
 
     public Cooldown(int time) {
-        long duration = (1000 * time);
+        long duration = (1000L * time);
         this.uniqueId = UUID.randomUUID();
         this.start = System.currentTimeMillis();
         this.expire = this.start + duration;
@@ -31,7 +36,7 @@ public class Cooldown {
     }
 
     public boolean hasExpired() {
-        return (System.currentTimeMillis() - this.expire >= 0L);
+        return (System.currentTimeMillis() - this.expire < 0L);
     }
 
     public String getTimeLeft() {
@@ -48,38 +53,6 @@ public class Cooldown {
 
     public String getContextLeft() {
         return "second" + ((getRemaining() / 1000L > 1L) ? "s" : "");
-    }
-
-    public UUID getUniqueId() {
-        return this.uniqueId;
-    }
-
-    public long getStart() {
-        return this.start;
-    }
-
-    public long getExpire() {
-        return this.expire;
-    }
-
-    public boolean isNotified() {
-        return this.notified;
-    }
-
-    public void setUniqueId(UUID uniqueId) {
-        this.uniqueId = uniqueId;
-    }
-
-    public void setStart(long start) {
-        this.start = start;
-    }
-
-    public void setExpire(long expire) {
-        this.expire = expire;
-    }
-
-    public void setNotified(boolean notified) {
-        this.notified = notified;
     }
 
     public boolean equals(Object o) {
