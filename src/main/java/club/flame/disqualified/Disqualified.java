@@ -7,8 +7,6 @@ import club.flame.disqualified.manager.database.redis.RedisManager;
 import club.flame.disqualified.manager.database.redis.payload.Payload;
 import club.flame.disqualified.manager.database.redis.payload.RedisMessage;
 import club.flame.disqualified.manager.hooks.HookPlaceholderAPI;
-import club.flame.disqualified.manager.hooks.callback.AbstractCallback;
-import club.flame.disqualified.manager.hooks.callback.CallbackReason;
 import club.flame.disqualified.manager.impl.VaultImpl;
 import club.flame.disqualified.manager.listener.BlockCommandListener;
 import club.flame.disqualified.manager.listener.GeneralPlayerListener;
@@ -23,9 +21,7 @@ import club.flame.disqualified.manager.staff.freeze.FreezeListener;
 import club.flame.disqualified.manager.tags.TagManager;
 import club.flame.disqualified.manager.tips.TipsRunnable;
 import club.flame.disqualified.menu.grant.GrantListener;
-import club.flame.disqualified.menu.punishments.button.PunishmentCheckButton;
 import club.flame.disqualified.utils.Utils;
-import club.flame.disqualified.utils.grant.GrantUtil;
 import club.flame.disqualified.utils.lang.Lang;
 import club.frozed.lib.FrozedLib;
 import club.frozed.lib.chat.CC;
@@ -107,10 +103,10 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Spigot&f: " + getServer().getName() + "&f " + getServer().getVersion()));
         Bukkit.getServer().getConsoleSender().sendMessage(CC.translate("&4Decent spigot detected&f, &ahooked in&f..."));
         Bukkit.getConsoleSender().sendMessage(CC.MENU_BAR);
-        kuukausi();
+        plausible();
     }
 
-    private void kuukausi() {
+    private void plausible() {
         this.debug = settingsConfig.getBoolean("SETTINGS.DEBUG");
         this.mongoManager = new MongoManager();
         this.redisManager = new RedisManager();
@@ -237,7 +233,7 @@ public final class Disqualified extends JavaPlugin {
 
     private void loadListener() {
         PluginManager pluginManager = Bukkit.getPluginManager();
-        boolean staffJoinMessages = new ConfigCursor(messagesConfig, "NETWORK.STAFF-ALERTS").exists("ENABLED") ? messagesConfig.getBoolean("NETWORK.STAFF-ALERTS.ENABLED") : true;
+        boolean staffJoinMessages = !new ConfigCursor(messagesConfig, "NETWORK.STAFF-ALERTS").exists("ENABLED") || messagesConfig.getBoolean("NETWORK.STAFF-ALERTS.ENABLED");
         if (staffJoinMessages) {
             pluginManager.registerEvents(new StaffListener(), this);
         }
@@ -298,7 +294,7 @@ public final class Disqualified extends JavaPlugin {
     }
 
     public StringBuilder getAuthors() {
-        StringBuilder format = new StringBuilder("");
+        StringBuilder format = new StringBuilder();
         List<String> authors = getDescription().getAuthors();
         int size = authors.size();
         for (String s : authors) {
