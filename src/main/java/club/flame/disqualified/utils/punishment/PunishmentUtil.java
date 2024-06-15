@@ -27,28 +27,6 @@ public class PunishmentUtil {
         return new Punishment(document);
     }
 
-//    public static Document serialize(Punishment punishment) {
-//        if (punishment == null) {
-//            return new Document();
-//        }
-//
-//        return punishment.toJSON();
-//    }
-//
-//    public static Punishment jsonStringToPunishment(String string){
-//        Document document = Document.parse(string);
-//
-//        return new Punishment(document);
-//    }
-//
-//    public static Punishment deserialize(Document document) {
-//        if (document == null || document.isEmpty()) {
-//            return null;
-//        }
-//
-//        return new Punishment(document);
-//    }
-
     public static String serializePunishment(Punishment punishment) {
         StringBuilder builder = new StringBuilder();
         if (punishment == null) {
@@ -170,7 +148,7 @@ public class PunishmentUtil {
 
             return res;
 
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
 
         return "";
@@ -207,7 +185,7 @@ public class PunishmentUtil {
                 .replace("-silent", "")
                 .replace("-SILENT", "");
 
-        if (string == null || string.equalsIgnoreCase("")) {
+        if (string.equalsIgnoreCase("")) {
             string = "No reason provided.";
         }
 
@@ -216,13 +194,8 @@ public class PunishmentUtil {
 
     public static String getPunishReason(Punishment punishment) {
         return punishment.isPardoned() ?
-                (punishment.getPardonedReason() == null
-                        || punishment.getPardonedReason().isEmpty()
-                        || punishment.getPardonedReason().equals("") ? "No reason provided" : punishment.getPardonedReason())
-                : (punishment.getReason() == null
-                || punishment.getReason().isEmpty()
-                || punishment.getReason().equals("") ? "No reason provided"
-                : punishment.getReason()
-        );
+                punishment.getPardonedReason() == null || punishment.getPardonedReason().isEmpty() ? "No reason provided" : punishment.getPardonedReason()
+                : punishment.getReason() == null || punishment.getReason().isEmpty() ? "No reason provided"
+                : punishment.getReason();
     }
 }
