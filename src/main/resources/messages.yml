@@ -32,11 +32,11 @@ NETWORK:
   SERVER-TPS:
     MESSAGE:
       - '&7&m---------------------'
-      - '&7 * &4Tps&7: &f%realtps%'
-      - '&7 * &4Uptime&7: &f<uptime>'
-      - '&7 * &4Max Memory&7: &f<maxmemory>&4MB'
-      - '&7 * &4All Memory&7: &f<allmemory>&4MB'
-      - '&7 * &4Free Memory&7: &f<freememory>&4MB'
+      - '&7 * &fTPS: &b%tps%'
+      - '&7 * &fUptime: &b%uptime%'
+      - '&7 * &fMaxMemory: &b%max-memory%'
+      - '&7 * &fAllMemory: &b%all-memory%'
+      - '&7 * &fFreeMemory: &b%free-memory%'
       - ''
       - '&4Worlds:'
       - '<world>'
