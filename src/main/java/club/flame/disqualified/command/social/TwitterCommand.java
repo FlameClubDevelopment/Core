@@ -9,16 +9,22 @@ import club.flame.disqualified.utils.lang.Lang;
 import org.bukkit.entity.Player;
 
 public class TwitterCommand extends BaseCommand {
-    @Command(name = "twitter")
 
+    @Command(name = "twitter")
     @Override
     public void onCommand(CommandArgs cmd) {
-        Player p = cmd.getPlayer();
+        Player player = cmd.getPlayer();
+        
         if (cmd.getArgs().length == 0) {
-            p.sendMessage(CC.translate(Disqualified.getInstance().getMessagesConfig().getString("COMMANDS.SOCIAL.MESSAGES")
-                    .replace("<command>", "Twitter")
-                    .replace("<social>", Lang.TWITTER))
-            );
+            String message = Disqualified.getInstance()
+                                        .getMessagesConfig()
+                                        .getConfiguration()
+                                        .getString("COMMANDS.SOCIAL.MESSAGES");
+            if (message != null) {
+                message = message.replace("<command>", "Twitter")
+                                 .replace("<social>", Lang.TWITTER);
+                player.sendMessage(CC.translate(message));
+            }
         }
     }
 }
