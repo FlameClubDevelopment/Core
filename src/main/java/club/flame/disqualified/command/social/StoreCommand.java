@@ -10,13 +10,18 @@ import org.bukkit.entity.Player;
 
 public class StoreCommand extends BaseCommand {
 
-    private static final String COMMAND_NAME = "discord";
+    private static final String COMMAND_NAME = "store";
     private static final String MESSAGE_KEY = "COMMANDS.SOCIAL.MESSAGES";
 
     @Command(name = COMMAND_NAME)
     @Override
     public void onCommand(CommandArgs cmd) {
         Player player = cmd.getPlayer();
+
+        if (player == null) {
+            cmd.getSender().sendMessage(CC.translate("&cThis command can only be run by a player."));
+            return;
+        }
 
         if (cmd.getArgs().length == 0) {
             String message = getFormattedMessage();
@@ -35,6 +40,6 @@ public class StoreCommand extends BaseCommand {
         if (messageTemplate == null) {
             return null;
         }
-        return messageTemplate.replace("<command>", "Discord").replace("<social>", Lang.DISCORD);
+        return messageTemplate.replace("<command>", "Store").replace("<social>", Lang.STORE);
     }
 }
