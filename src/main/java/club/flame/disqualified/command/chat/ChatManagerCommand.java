@@ -2,13 +2,11 @@ package club.flame.disqualified.command.chat;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.chat.ChatManager;
-import club.flame.disqualified.utils.Utils;
 import club.frozed.lib.chat.CC;
 import club.frozed.lib.commands.BaseCommand;
 import club.frozed.lib.commands.Command;
 import club.frozed.lib.commands.CommandArgs;
 import club.frozed.lib.commands.Completer;
-import club.frozed.lib.config.ConfigCursor;
 import club.frozed.lib.number.NumberUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
