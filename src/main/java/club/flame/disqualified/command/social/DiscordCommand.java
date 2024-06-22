@@ -6,6 +6,7 @@ import club.frozed.lib.commands.BaseCommand;
 import club.frozed.lib.commands.Command;
 import club.frozed.lib.commands.CommandArgs;
 import club.flame.disqualified.utils.lang.Lang;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class DiscordCommand extends BaseCommand {
@@ -16,7 +17,14 @@ public class DiscordCommand extends BaseCommand {
     @Command(name = COMMAND_NAME)
     @Override
     public void onCommand(CommandArgs cmd) {
-        Player player = cmd.getPlayer();
+        CommandSender sender = cmd.getSender();
+        
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(CC.translate("&cThis command can only be run by a player."));
+            return;
+        }
+
+        Player player = (Player) sender;
 
         if (cmd.getArgs().length == 0) {
             String message = getFormattedMessage();
