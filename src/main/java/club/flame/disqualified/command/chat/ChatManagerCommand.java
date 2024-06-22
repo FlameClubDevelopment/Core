@@ -14,7 +14,7 @@ import org.bukkit.entity.Player;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class ChatManagerCommand extends BaseCommand {
+public class ChatManagerCommand extends BaseCommand {
 
     @Command(name = "chat.slow", permission = "chat.slow")
     public void onChatSlow(CommandArgs args) {
