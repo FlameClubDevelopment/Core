@@ -8,7 +8,7 @@ import club.frozed.lib.commands.CommandArgs;
 import club.flame.disqualified.utils.lang.Lang;
 import org.bukkit.entity.Player;
 
-public class DiscordCommand extends BaseCommand {
+public class StoreCommand extends BaseCommand {
 
     private static final String COMMAND_NAME = "discord";
     private static final String MESSAGE_KEY = "COMMANDS.SOCIAL.MESSAGES";
