@@ -9,24 +9,50 @@ import org.bukkit.entity.Player;
 @Getter
 public class Lang {
 
-    public static String TS = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.SOCIAL.TEAMSPEAK");
-    public static String DISCORD = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.SOCIAL.DISCORD");
-    public static String TWITTER = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.SOCIAL.TWITTER");
-    public static String STORE = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.SOCIAL.STORE");
+    // Social commands messages
+    public static final String TS = getMessage("COMMANDS.SOCIAL.TEAMSPEAK");
+    public static final String DISCORD = getMessage("COMMANDS.SOCIAL.DISCORD");
+    public static final String TWITTER = getMessage("COMMANDS.SOCIAL.TWITTER");
+    public static final String STORE = getMessage("COMMANDS.SOCIAL.STORE");
 
-    public static String SERVER_IP = Disqualified.getInstance().getSettingsConfig().getConfiguration().getString("SETTINGS.NAME-MC-CHECK.SERVER-IP");
-    public static String SERVER_NAME = Disqualified.getInstance().getSettingsConfig().getConfiguration().getString("SETTINGS.SERVER-NAME");
-    public static String PREFIX = CC.translate(Disqualified.getInstance().getSettingsConfig().getConfiguration().getString("SETTINGS.PREFIX"));
+    // Server settings messages
+    public static final String SERVER_IP = getSetting("SETTINGS.NAME-MC-CHECK.SERVER-IP");
+    public static final String SERVER_NAME = getSetting("SETTINGS.SERVER-NAME");
+    public static final String PREFIX = CC.translate(getSetting("SETTINGS.PREFIX"));
 
-    public static String OFFLINE_PLAYER = CC.translate("&cPlayer not found.");
-    public static String NO_PERMS = CC.translate("&cYou don't have permissions.");
-    public static String NO_NUMBER = CC.translate("&cIt must be a number");
+    // Common messages
+    public static final String OFFLINE_PLAYER = CC.translate("&cPlayer not found.");
+    public static final String NO_PERMS = CC.translate("&cYou don't have permissions.");
+    public static final String NO_NUMBER = CC.translate("&cIt must be a number");
 
+    /**
+     * Plays a sound to the player.
+     *
+     * @param player       The player to play the sound to.
+     * @param confirmation If true, plays a confirmation sound; otherwise, plays an error sound.
+     */
     public static void playSound(Player player, boolean confirmation) {
-        if (confirmation) {
-            player.playSound(player.getLocation(), Sound.NOTE_PLING, 2F, 2F);
-        } else {
-            player.playSound(player.getLocation(), Sound.ITEM_BREAK, 2F, 2F);
-        }
+        Sound sound = confirmation ? Sound.NOTE_PLING : Sound.ITEM_BREAK;
+        player.playSound(player.getLocation(), sound, 2F, 2F);
+    }
+
+    /**
+     * Retrieves a message from the messages configuration.
+     *
+     * @param path The path to the message in the configuration.
+     * @return The message as a String.
+     */
+    private static String getMessage(String path) {
+        return Disqualified.getInstance().getMessagesConfig().getConfiguration().getString(path);
+    }
+
+    /**
+     * Retrieves a setting from the settings configuration.
+     *
+     * @param path The path to the setting in the configuration.
+     * @return The setting as a String.
+     */
+    private static String getSetting(String path) {
+        return Disqualified.getInstance().getSettingsConfig().getConfiguration().getString(path);
     }
 }
