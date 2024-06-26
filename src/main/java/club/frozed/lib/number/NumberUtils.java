@@ -34,4 +34,8 @@ public class NumberUtils {
         }
         return true;
     }
+
+    public static boolean isInteger(String argument) {
+        return false;
+    }
 }

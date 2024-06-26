@@ -8,12 +8,6 @@ import org.bukkit.Bukkit;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-/**
- * Re-Work Code by HCFAlerts
- * Project: Disqualified
- * Credits: FCD
- */
-
 @Getter
 public class RedisManager {
 
@@ -52,7 +46,7 @@ public class RedisManager {
             if (Disqualified.getInstance().isDebug()) {
                 e.printStackTrace();
             }
-            Bukkit.getConsoleSender().sendMessage("§4[Disqualified] An error occurred while trying to connect to Redis.");
+            Bukkit.getConsoleSender().sendMessage("§6[Disqualified] An error occurred while trying to connect to Redis.");
             active = false;
         }
     }

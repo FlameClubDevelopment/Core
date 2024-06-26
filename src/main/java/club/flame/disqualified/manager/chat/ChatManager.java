@@ -23,4 +23,7 @@ public class ChatManager {
         configCursor.set("DELAY", delay);
         configCursor.save();
     }
+
+    public void setChatDelay(int delay) {
+    }
 }

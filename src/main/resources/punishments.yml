@@ -139,7 +139,7 @@ PUNISHMENTS-MENU:
 ALTS-FORMAT:
   ALT-FORMAT: '&4 ▸ &f<player> <status>'
   FORMAT:
-    - '&4&lZoom &7- &cPlayer Alts'
+    - '&4&lDisqualified &7- &cPlayer Alts'
     - '&7&m----------------------'
     - '&4 ▸ &4Player&7: &f<player>'
     - '&8 ▸ &4Alts&7:'

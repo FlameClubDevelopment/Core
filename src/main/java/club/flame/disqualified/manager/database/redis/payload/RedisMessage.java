@@ -6,12 +6,6 @@ import lombok.Getter;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Re-Work Code by HCFAlerts
- * Project: Disqualified
- * Credits: FCD
- */
-
 public class RedisMessage {
 
     @Getter private Payload payload;

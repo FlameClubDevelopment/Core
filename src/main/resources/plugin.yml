@@ -1,87 +1,11 @@
 name: Disqualified
 version: 1.0.7-STABLE
 main: club.flame.disqualified.Disqualified
-description: Disqualified is an all-in-one Network Core with over 20 features including optimized performance.
+description: Disqualified is an all-in-one Network Core
 website: https://dsc.gg/flameclubdevelopment
 softdepend:
   - PlaceholderAPI
   - MVdWPlaceholderAPI
 authors:
   - FlameClubDevelopment
-commands:
-  bc:
-    description: Broadcast a message to the server.
-    usage: /bc <message>
-  report:
-    description: Report a player.
-    usage: /report <player> <reason>
-  freeze:
-    description: Freeze a player.
-    usage: /freeze <player>
-  invsee:
-    description: View a player's inventory.
-    usage: /invsee <player>
-  ci:
-    description: Clear your inventory.
-    usage: /ci
-  ec:
-    description: Open your ender chest.
-    usage: /ec
-  fix:
-    description: Fix the item in your hand.
-    usage: /fix
-  tpm:
-    description: Send a private message to a player.
-    usage: /tpm <player> <message>
-  ignore:
-    description: Ignore messages from a player.
-    usage: /ignore <player>
-  socialspy:
-    description: Spy on private messages.
-    usage: /socialspy
-  announce:
-    description: Announce a message to the server.
-    usage: /announce <message>
-  playerinfo:
-    description: Get information about a player.
-    usage: /playerinfo <player>
-  alts:
-    description: Check for alternate accounts of a player.
-    usage: /alts <player>
-  check:
-    description: Check a player's status.
-    usage: /check <player>
-  discord:
-    description: Show the Discord link.
-    usage: /discord
-  store:
-    description: Show the store link.
-    usage: /store
-  ts:
-    description: Show the TeamSpeak link.
-    usage: /ts
-  vote:
-    description: Vote for the server.
-    usage: /vote
-  tags:
-    description: Manage your tags.
-    usage: /tags
-  tphere:
-    description: Teleport a player to your location.
-    usage: /tphere <player>
-  top:
-    description: Teleport to the highest block at your location.
-    usage: /top
-  tpall:
-    description: Teleport all players to your location.
-    usage: /tpall
-  day:
-    description: Set the time to day.
-    usage: /day
-  night:
-    description: Set the time to night.
-    usage: /night
-  sunset:
-    description: Set the time to sunset.
-    usage: /sunset
 

@@ -31,12 +31,12 @@ public class BroadcastCommand extends BaseCommand {
 
         // Retrieve the broadcast message template from the configuration and check for null
         String template = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.BROADCAST", "Broadcast: <text>");
-        
+
         // Check for null or missing placeholders and replace them appropriately
         if (template == null) {
             template = "Broadcast: <text>";
         }
-        
+
         if (message == null) {
             message = "";
         }

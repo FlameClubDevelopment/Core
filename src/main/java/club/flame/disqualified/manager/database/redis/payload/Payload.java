@@ -1,11 +1,5 @@
 package club.flame.disqualified.manager.database.redis.payload;
 
-/**
- * Re-Work Code by HCFAlerts
- * Project: Disqualified
- * Credits: FCD
- */
-
 public enum  Payload {
     SERVER_MANAGER,
     ADMIN_CHAT,

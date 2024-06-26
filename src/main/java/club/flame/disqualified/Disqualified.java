@@ -23,6 +23,8 @@ import club.flame.disqualified.manager.tips.TipsRunnable;
 import club.flame.disqualified.menu.grant.GrantListener;
 import club.flame.disqualified.utils.Utils;
 import club.flame.disqualified.utils.lang.Lang;
+import club.flame.disqualified.Permissions;
+import club.flame.disqualified.utils.UpdateChecker;
 import club.frozed.lib.FrozedLib;
 import club.frozed.lib.chat.CC;
 import club.frozed.lib.config.ConfigCursor;
