@@ -1,37 +1,48 @@
 package club.flame.disqualified.command.network;
 
 import club.flame.disqualified.Disqualified;
-import club.flame.disqualified.manager.player.PlayerData;
-import club.flame.disqualified.utils.Utils;
-import club.flame.disqualified.utils.lang.Lang;
 import club.frozed.lib.chat.CC;
 import club.frozed.lib.commands.BaseCommand;
 import club.frozed.lib.commands.Command;
 import club.frozed.lib.commands.CommandArgs;
-import org.bukkit.entity.Player;
+import org.apache.commons.lang.StringUtils;
+import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
 
-/**
- * Re-Work Code by HCFAlerts
- * Project: Disqualified
- * Credits: FCD
- */
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class AnnounceCommand extends BaseCommand {
-    @Command(name = "announce", aliases = {"announceserver", "alertserver"}, permission = "core.network.announce")
-    public void onCommand(CommandArgs command) {
-        Player player = command.getPlayer();
-        PlayerData playerData = PlayerData.getPlayerData(player.getUniqueId());
+    @Command(name = "announceserver", permission = "core.network.announce", aliases = {"announce", "as"}, inGameOnly = false)
+    @Override
+    public void onCommand(CommandArgs cmd) {
+        CommandSender p = cmd.getSender();
+        String[] args = cmd.getArgs();
 
-        String rankPrefix = playerData.getHighestRank().getPrefix();
-        String rankColor = playerData.getHighestRank().getColor().toString();
+        if (args.length == 0) {
+            p.sendMessage("§cUsage: /" + cmd.getLabel() + " <text>");
+            return;
+        }
 
-        String serverName = Disqualified.getInstance().getSettingsConfig().getString("SERVER-NAME");
+        List<String> text = new ArrayList<>();
+        Collections.addAll(text, args);
+        String message = StringUtils.join(text, " ");
 
-        String message = Disqualified.getInstance().getSettingsConfig().getString("SETTINGS.SERVER-ANNOUNCE")
-                .replace("<name>", player.getName())
-                .replace("<rank>", rankColor + rankPrefix)
-                .replace("&", "§")
-                .replace("<server_name>", serverName);
+        // Retrieve the broadcast message template from the configuration and check for null
+        String template = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.ANNOUNCE", "Announcement: <text>");
+        
+        // Check for null or missing placeholders and replace them appropriately
+        if (template == null) {
+            template = "Announcement: <text>";
+        }
+        
+        if (message == null) {
+            message = "";
+        }
 
-        Utils.globalBroadcast(player, CC.translate(message));
+        // Replace the placeholder with the actual message
+        String broadcastMessage = CC.translate(template.replace("<text>", message));
+        Bukkit.broadcastMessage(broadcastMessage);
     }
 }
