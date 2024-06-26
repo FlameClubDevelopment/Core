@@ -8,7 +8,6 @@ import club.frozed.lib.commands.CommandArgs;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +15,6 @@ import java.util.List;
 
 public class BroadcastCommand extends BaseCommand {
     @Command(name = "broadcast", permission = "core.essentials.broadcast", aliases = {"bc", "alerta"}, inGameOnly = false)
-
     @Override
     public void onCommand(CommandArgs cmd) {
         CommandSender p = cmd.getSender();
@@ -29,7 +27,10 @@ public class BroadcastCommand extends BaseCommand {
 
         List<String> text = new ArrayList<>();
         Collections.addAll(text, args);
-        Bukkit.broadcastMessage(CC.translate(Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.BROADCAST")
-                .replace("<text>", StringUtils.join(text, " "))));
+        String message = StringUtils.join(text, " ");
+        
+        String broadcastMessage = CC.translate(Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.BROADCAST")
+                .replace("<text>", message));
+        Bukkit.broadcastMessage(broadcastMessage);
     }
 }
