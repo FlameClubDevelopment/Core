@@ -28,9 +28,21 @@ public class BroadcastCommand extends BaseCommand {
         List<String> text = new ArrayList<>();
         Collections.addAll(text, args);
         String message = StringUtils.join(text, " ");
+
+        // Retrieve the broadcast message template from the configuration and check for null
+        String template = Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.BROADCAST", "Broadcast: <text>");
         
-        String broadcastMessage = CC.translate(Disqualified.getInstance().getMessagesConfig().getConfiguration().getString("COMMANDS.BROADCAST")
-                .replace("<text>", message));
+        // Check for null or missing placeholders and replace them appropriately
+        if (template == null) {
+            template = "Broadcast: <text>";
+        }
+        
+        if (message == null) {
+            message = "";
+        }
+
+        // Replace the placeholder with the actual message
+        String broadcastMessage = CC.translate(template.replace("<text>", message));
         Bukkit.broadcastMessage(broadcastMessage);
     }
 }
