@@ -97,7 +97,7 @@ COMMANDS:
     DISCORD: 'https://discord.servername.net'
     TEAMSPEAK: 'ts.servername.net'
     MESSAGES: '&4<command>&7: &f<social>'
-  BROADCAST: '&7[&4&l<server>&7] &f<text>'
+  BROADCAST: '&7[&4&lHub-01&7] &f<text>'
   TELEPORT-MESSAGES:
     TP: '&aYou have been teleported to &f<target>'
     TOP: '&aYou have been teleported to the top.'

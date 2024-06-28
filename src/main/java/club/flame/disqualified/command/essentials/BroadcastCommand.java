@@ -14,8 +14,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static club.flame.disqualified.Disqualified.serverName;
-
 public class BroadcastCommand extends BaseCommand {
     @Command(name = "broadcast", permission = "core.essentials.broadcast", aliases = {"bc", "alerta"}, inGameOnly = false)
     @Override
@@ -45,7 +43,7 @@ public class BroadcastCommand extends BaseCommand {
         }
 
         // Replace the placeholder with the actual message
-        String broadcastMessage = CC.translate(template.replace("<text>", message)) + CC.translate(template.replace("<server>", serverName));
+        String broadcastMessage = CC.translate(template.replace("<text>", message));
         Bukkit.broadcastMessage(broadcastMessage);
     }
 }

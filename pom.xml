@@ -99,15 +99,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Frozed Lib -->
-        <dependency>
-            <groupId>club.frozed.lib</groupId>
-            <artifactId>FrozedLib</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/Lib.jar</systemPath>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <dependency>
             <groupId>commons-codec</groupId>
