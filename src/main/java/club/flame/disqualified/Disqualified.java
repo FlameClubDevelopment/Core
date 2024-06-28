@@ -79,7 +79,7 @@ public final class Disqualified extends JavaPlugin {
 
         this.disqualifiedAPI = new DisqualifiedAPI();
         this.disqualifiedLib = new DisqualifiedLib(this);
-        if (!disqualifiedLib.checkAuthors("Ryzeon", "Elb1to")) {
+        if (!disqualifiedLib.checkAuthors("FlameClubDevelopment")) {
             return;
         }
         this.commandsFile = new FileConfig(this, "commands.yml");

@@ -11,7 +11,7 @@ import club.flame.disqualified.lib.commands.CommandArgs;
 import org.bukkit.entity.Player;
 
 public class AnnounceCommand extends BaseCommand {
-    @Command(name = "announce", aliases = {"announceserver", "alertserver"}, permission = "core.network.announce", inGameOnly = false)
+    @Command(name = "announce", aliases = {"announceserver", "alertserver"}, permission = "core.network.announce", inGameOnly = true)
 
     public void onCommand(CommandArgs command) {
         Player player = command.getPlayer();

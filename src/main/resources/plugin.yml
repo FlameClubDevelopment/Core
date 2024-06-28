@@ -1,5 +1,5 @@
 name: Disqualified
-version: 1.0.7-STABLE
+version: ${project.version}
 main: club.flame.disqualified.Disqualified
 description: Disqualified is an All-in-one Network Core
 website: https://dsc.gg/flameclubdevelopment
