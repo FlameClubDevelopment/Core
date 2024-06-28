@@ -25,12 +25,12 @@ import club.flame.disqualified.utils.Utils;
 import club.flame.disqualified.utils.lang.Lang;
 import club.flame.disqualified.Permissions;
 import club.flame.disqualified.utils.UpdateChecker;
-import club.frozed.lib.FrozedLib;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.config.ConfigCursor;
-import club.frozed.lib.config.FileConfig;
-import club.frozed.lib.menu.ButtonListener;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.DisqualifiedLib;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.config.ConfigCursor;
+import club.flame.disqualified.lib.config.FileConfig;
+import club.flame.disqualified.lib.menu.ButtonListener;
+import club.flame.disqualified.lib.task.TaskUtil;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.Bukkit;
@@ -48,7 +48,7 @@ public final class Disqualified extends JavaPlugin {
     @Getter private static Disqualified instance;
     private DisqualifiedAPI disqualifiedAPI;
     private FileConfig messagesConfig, databaseConfig, settingsConfig, tagsConfig, ranksConfig, punishmentConfig, commandsFile;
-    private FrozedLib frozedLib;
+    private DisqualifiedLib disqualifiedLib;
     private TagManager tagManager;
     private MongoManager mongoManager;
     private RedisManager redisManager;
@@ -68,7 +68,7 @@ public final class Disqualified extends JavaPlugin {
 
         if (!this.getDescription().getName().equals("Disqualified")
                 || !this.getDescription().getWebsite().equals("https://dsc.gg/flameclubdevelopment")
-                || !this.getDescription().getDescription().equals("Disqualified is an all-in-one Network Core with over 20 features including optimized performance.")
+                || !this.getDescription().getDescription().equals("Disqualified is an All-in-one Network Core")
                 || !this.getDescription().getAuthors().contains("FlameClubDevelopment")) {
             Bukkit.getServer().getPluginManager().disablePlugin(this);
             for (int i = 0; i < 100; i++) {
@@ -78,8 +78,8 @@ public final class Disqualified extends JavaPlugin {
         }
 
         this.disqualifiedAPI = new DisqualifiedAPI();
-        this.frozedLib = new FrozedLib(this);
-        if (!frozedLib.checkAuthors("Ryzeon", "Elb1to")) {
+        this.disqualifiedLib = new DisqualifiedLib(this);
+        if (!disqualifiedLib.checkAuthors("Ryzeon", "Elb1to")) {
             return;
         }
         this.commandsFile = new FileConfig(this, "commands.yml");
@@ -162,19 +162,19 @@ public final class Disqualified extends JavaPlugin {
         Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 
         if (Bukkit.getServer().getVersion() != null) {
-            Bukkit.getConsoleSender().sendMessage(CC.translate(Lang.PREFIX + "&7[&4Disqualified&7] &aSpigot hook successfully registered."));
+            Bukkit.getConsoleSender().sendMessage(CC.translate("&7[&4Disqualified&7] &aSpigot hook successfully registered."));
         }
 
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             new HookPlaceholderAPI(this).register();
-            Bukkit.getConsoleSender().sendMessage(CC.translate(Lang.PREFIX + "&7[&4Disqualified&7] &aPlaceholderAPI hook successfully registered."));
+            Bukkit.getConsoleSender().sendMessage(CC.translate("&7[&4Disqualified&7] &aPlaceholderAPI hook successfully registered."));
         }
 
         if (this.getServer().getPluginManager().getPlugin("Vault") != null) {
             VaultImpl vault = new VaultImpl();
             vault.register();
 
-            Bukkit.getConsoleSender().sendMessage(CC.translate(Lang.PREFIX + "&7[&4Disqualified&7] &aVault implementation successfully performed."));
+            Bukkit.getConsoleSender().sendMessage(CC.translate("&7[&4Disqualified&7] &aVault implementation successfully performed."));
         }
 
         PlayerData.startTask();
@@ -227,10 +227,10 @@ public final class Disqualified extends JavaPlugin {
     }
 
     private void loadCommands() {
-        frozedLib.setExcludeCommandConfig(settingsConfig, "SETTINGS.DISABLE-COMMANDS");
-        frozedLib.setDisableCommandMessage(CC.translate(Lang.PREFIX + "&4<command> &fcommand was not registered because it was disabled in the configuration."));
-        frozedLib.loadCommandsFromPackage("club.flame.disqualified.command");
-        frozedLib.loadCommandsInFile();
+        disqualifiedLib.setExcludeCommandConfig(settingsConfig, "SETTINGS.DISABLE-COMMANDS");
+        disqualifiedLib.setDisableCommandMessage(CC.translate(Lang.PREFIX + "&4<command> &fcommand was not registered because it was disabled in the configuration."));
+        disqualifiedLib.loadCommandsFromPackage("club.flame.disqualified.command");
+        disqualifiedLib.loadCommandsInFile();
     }
 
     private void loadListener() {

@@ -1,10 +1,10 @@
 package club.flame.disqualified.command.network;
 
 import club.flame.disqualified.utils.lang.Lang;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -13,6 +13,7 @@ import org.bukkit.entity.Player;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class InstanceCommand extends BaseCommand {
     @Command(name = "instance", aliases = {"serverinstance", "checkinstance", "currentserver"}, permission = "core.network.instance", usage = "Usage: /instance <serverName>", inGameOnly = true)
 

@@ -1,10 +1,11 @@
 package club.flame.disqualified.command.essentials;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.utils.lang.Lang;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -12,6 +13,8 @@ import org.bukkit.command.CommandSender;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import static club.flame.disqualified.Disqualified.serverName;
 
 public class BroadcastCommand extends BaseCommand {
     @Command(name = "broadcast", permission = "core.essentials.broadcast", aliases = {"bc", "alerta"}, inGameOnly = false)
@@ -42,7 +45,7 @@ public class BroadcastCommand extends BaseCommand {
         }
 
         // Replace the placeholder with the actual message
-        String broadcastMessage = CC.translate(template.replace("<text>", message));
+        String broadcastMessage = CC.translate(template.replace("<text>", message)) + CC.translate(template.replace("<server>", serverName));
         Bukkit.broadcastMessage(broadcastMessage);
     }
 }

@@ -3,10 +3,10 @@ package club.flame.disqualified.menu.color.chatcolor;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.menu.color.chatcolor.buttons.ChatColorButton;
 import club.flame.disqualified.menu.color.chatcolor.buttons.ResetButton;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.menu.Menu;
-import club.frozed.lib.menu.buttons.CloseButton;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.menu.Menu;
+import club.flame.disqualified.lib.menu.buttons.CloseButton;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
@@ -18,6 +18,7 @@ import java.util.Map;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class ChatColorMenu extends Menu {
     
     @Override

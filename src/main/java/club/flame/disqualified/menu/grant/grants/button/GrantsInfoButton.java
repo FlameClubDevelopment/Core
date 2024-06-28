@@ -8,10 +8,10 @@ import club.flame.disqualified.manager.player.grants.Grant;
 import club.flame.disqualified.manager.ranks.Rank;
 import club.flame.disqualified.utils.grant.GrantUtil;
 import club.flame.disqualified.utils.grant.WoolUtil;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.task.TaskUtil;
 import lombok.AllArgsConstructor;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -27,6 +27,7 @@ import java.util.List;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @AllArgsConstructor
 public class GrantsInfoButton extends Button {
 

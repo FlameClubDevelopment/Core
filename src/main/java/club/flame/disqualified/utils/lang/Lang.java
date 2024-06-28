@@ -1,7 +1,7 @@
 package club.flame.disqualified.utils.lang;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import lombok.Getter;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;

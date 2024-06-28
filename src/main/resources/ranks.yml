@@ -4,7 +4,7 @@ Owner:
   SUFFIX: ''
   COLOR: DARK_RED
   DEFAULT: false
-  BOLD: true
+  BOLD: false
   ITALIC: false
   PRIORITY: 100
   INHERITANCE:
@@ -13,9 +13,9 @@ Owner:
     - 'core.owner'
 Manager:
   NAME: Manager
-  PREFIX: '&7[&cManager&7] '
+  PREFIX: '&7[&6Manager&7] '
   SUFFIX: ''
-  COLOR: RED
+  COLOR: GOLD
   DEFAULT: false
   BOLD: false
   ITALIC: false
@@ -39,9 +39,9 @@ Mod:
     - 'core.mod'
 Vip:
   NAME: Vip
-  PREFIX: '&7[&6VIP&7] '
+  PREFIX: '&7[&2VIP&7] '
   SUFFIX: ''
-  COLOR: GOLD
+  COLOR: DARK_GREEN
   DEFAULT: false
   BOLD: false
   ITALIC: false

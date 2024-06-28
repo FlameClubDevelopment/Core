@@ -8,11 +8,11 @@ import club.flame.disqualified.manager.player.punishments.Punishment;
 import club.flame.disqualified.manager.player.punishments.PunishmentExecutor;
 import club.flame.disqualified.manager.player.punishments.PunishmentType;
 import club.flame.disqualified.utils.punishment.PunishmentUtil;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.task.TaskUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
@@ -24,6 +24,7 @@ import java.util.UUID;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class BlacklistCommand extends BaseCommand {
 
     @Command(name = "blacklist", aliases = {"ipban", "banip"}, inGameOnly = false, permission = "core.punishments.blacklist")

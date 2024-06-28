@@ -1,8 +1,8 @@
 package club.flame.disqualified.command.inventory;
 
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;

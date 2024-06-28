@@ -1,7 +1,7 @@
 name: Disqualified
 version: 1.0.7-STABLE
 main: club.flame.disqualified.Disqualified
-description: Disqualified is an all-in-one Network Core
+description: Disqualified is an All-in-one Network Core
 website: https://dsc.gg/flameclubdevelopment
 softdepend:
   - PlaceholderAPI

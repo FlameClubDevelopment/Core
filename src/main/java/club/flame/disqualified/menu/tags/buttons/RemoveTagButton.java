@@ -1,8 +1,8 @@
 package club.flame.disqualified.menu.tags.buttons;
 
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -26,6 +26,7 @@ public class RemoveTagButton extends Button {
         PlayerData data = PlayerData.getPlayerData(player.getUniqueId());
         if (data.getTag() != null) {
             data.setTag(null);
+            player.sendMessage("§aTag successfully removed");
             playSuccess(player);
         } else {
             player.sendMessage("§cYou don't have a tag");

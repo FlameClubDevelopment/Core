@@ -3,7 +3,7 @@ package club.flame.disqualified.menu.grant;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.player.grants.GrantProcedureState;
 import club.flame.disqualified.menu.grant.procedure.GrantConfirmMenu;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.time.DateUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
@@ -18,6 +18,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class GrantListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)

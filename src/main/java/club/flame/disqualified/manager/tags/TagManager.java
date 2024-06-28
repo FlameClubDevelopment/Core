@@ -5,7 +5,7 @@ import club.flame.disqualified.manager.hooks.callback.AbstractCallback;
 import club.flame.disqualified.manager.hooks.callback.CallbackReason;
 import club.flame.disqualified.utils.grant.GrantUtil;
 import club.flame.disqualified.utils.lang.Lang;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

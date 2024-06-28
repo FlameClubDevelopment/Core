@@ -1,9 +1,9 @@
 package club.flame.disqualified.command.color;
 
 import club.flame.disqualified.menu.color.chatcolor.ChatColorMenu;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import org.bukkit.entity.Player;
 
 public class ChatColorCommand extends BaseCommand {

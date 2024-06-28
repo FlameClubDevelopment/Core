@@ -4,12 +4,12 @@ import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.tags.Tag;
 import club.flame.disqualified.menu.tags.buttons.RemoveTagButton;
 import club.flame.disqualified.menu.tags.buttons.TagButton;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.menu.buttons.AirButton;
-import club.frozed.lib.menu.buttons.PageInfoButton;
-import club.frozed.lib.menu.pagination.PageButton;
-import club.frozed.lib.menu.pagination.PaginatedMenu;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.menu.buttons.AirButton;
+import club.flame.disqualified.lib.menu.buttons.PageInfoButton;
+import club.flame.disqualified.lib.menu.pagination.PageButton;
+import club.flame.disqualified.lib.menu.pagination.PaginatedMenu;
 import org.bukkit.entity.Player;
 
 import java.util.HashMap;
@@ -20,6 +20,7 @@ import java.util.Map;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class TagsMenu extends PaginatedMenu {
 
     @Override

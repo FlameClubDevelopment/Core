@@ -1,7 +1,7 @@
 package club.flame.disqualified.manager.database.mongo;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.config.ConfigCursor;
+import club.flame.disqualified.lib.config.ConfigCursor;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;

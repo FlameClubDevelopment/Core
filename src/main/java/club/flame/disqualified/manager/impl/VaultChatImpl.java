@@ -3,7 +3,7 @@ package club.flame.disqualified.manager.impl;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.ranks.Rank;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import lombok.Getter;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.permission.Permission;
@@ -15,6 +15,7 @@ import org.bukkit.plugin.ServicePriority;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @Getter
 public class VaultChatImpl extends Chat {
 

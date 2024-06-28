@@ -3,8 +3,8 @@ package club.flame.disqualified.menu.punishments.button;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.hooks.callback.AbstractCallback;
 import club.flame.disqualified.utils.Utils;
-import club.frozed.lib.discord.DiscordWebhook;
-import club.frozed.lib.number.NumberUtils;
+import club.flame.disqualified.lib.discord.DiscordWebhook;
+import club.flame.disqualified.lib.number.NumberUtils;
 
 import java.awt.*;
 import java.io.IOException;

@@ -1,7 +1,7 @@
 package club.flame.disqualified.manager.tips;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;

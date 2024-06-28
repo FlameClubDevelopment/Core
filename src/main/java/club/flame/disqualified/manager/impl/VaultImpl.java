@@ -4,7 +4,7 @@ import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.player.grants.Grant;
 import club.flame.disqualified.manager.ranks.Rank;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.permission.Permission;
 import org.bukkit.Bukkit;
@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class VaultImpl extends Permission {
 
 	private Disqualified plugin;

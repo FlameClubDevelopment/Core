@@ -1,7 +1,7 @@
 package club.flame.disqualified.manager.listener;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

@@ -2,10 +2,10 @@ package club.flame.disqualified.menu.punishments.button;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.Utils;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import com.mysql.jdbc.Util;
 import lombok.AllArgsConstructor;
 import org.bukkit.ChatColor;

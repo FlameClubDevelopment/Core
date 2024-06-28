@@ -3,10 +3,10 @@ package club.flame.disqualified.command.essentials.staff;
 import club.flame.disqualified.manager.event.freeze.PlayerFreezeEvent;
 import club.flame.disqualified.manager.event.freeze.PlayerUnFreezeEvent;
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 

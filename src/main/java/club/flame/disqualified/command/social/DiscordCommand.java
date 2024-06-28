@@ -1,10 +1,10 @@
 package club.flame.disqualified.command.social;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import club.flame.disqualified.utils.lang.Lang;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

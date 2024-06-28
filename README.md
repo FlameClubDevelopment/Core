@@ -1,4 +1,4 @@
-# Disqualified (1.8 - 1.20)
+# Disqualified (1.7 - 1.21)
 
 Disqualified is a Minecraft plugin designed to enhance server functionality with various features including chat management, social media integration, and link restrictions. This repository contains the source code and configuration files needed to run the plugin.
 

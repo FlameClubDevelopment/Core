@@ -1,7 +1,7 @@
 package club.flame.disqualified.manager.messages;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import lombok.Getter;
 import lombok.Setter;
 import club.flame.disqualified.manager.player.PlayerData;

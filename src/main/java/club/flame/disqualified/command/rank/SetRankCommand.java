@@ -3,13 +3,13 @@ package club.flame.disqualified.command.rank;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.ranks.Rank;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.Utils;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import club.flame.disqualified.utils.time.DateUtils;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.task.TaskUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
@@ -19,6 +19,7 @@ import org.bukkit.command.CommandSender;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class SetRankCommand extends BaseCommand {
 
     @Command(name = "setrank", permission = "core.rank.setrank", inGameOnly = false)

@@ -3,9 +3,9 @@ package club.flame.disqualified.menu.tags.buttons;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.tags.Tag;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import lombok.AllArgsConstructor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -19,6 +19,7 @@ import java.util.List;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @AllArgsConstructor
 public class TagButton extends Button {
 
@@ -50,6 +51,7 @@ public class TagButton extends Button {
         PlayerData data = PlayerData.getPlayerData(player.getUniqueId());
         if (player.hasPermission(tag.getTagPermission()) || player.hasPermission("core.tags.all")) {
             data.setTag(tag.getTagPrefix());
+            player.sendMessage("§aTag successfully selected");
             playSuccess(player);
         } else {
             player.sendMessage(CC.translate("§cYou don't have this tag"));

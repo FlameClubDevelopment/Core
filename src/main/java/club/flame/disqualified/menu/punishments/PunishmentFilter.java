@@ -1,6 +1,6 @@
 package club.flame.disqualified.menu.punishments;
 
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import lombok.Getter;
 import org.apache.commons.lang.WordUtils;
 
@@ -9,6 +9,7 @@ import org.apache.commons.lang.WordUtils;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public enum PunishmentFilter {
 
     NONE(CC.WHITE),

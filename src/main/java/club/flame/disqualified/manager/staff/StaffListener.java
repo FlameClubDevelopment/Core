@@ -5,7 +5,7 @@ import club.flame.disqualified.manager.database.redis.payload.Payload;
 import club.flame.disqualified.manager.database.redis.payload.RedisMessage;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.utils.lang.Lang;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.task.TaskUtil;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

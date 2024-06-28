@@ -1,6 +1,6 @@
 package club.flame.disqualified.menu.invsee.button;
 
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.menu.Button;
 import lombok.AllArgsConstructor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;

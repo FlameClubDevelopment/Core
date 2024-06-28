@@ -13,6 +13,7 @@ import java.util.Objects;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class HookPlaceholderAPI extends PlaceholderExpansion {
 
     private Disqualified plugin;

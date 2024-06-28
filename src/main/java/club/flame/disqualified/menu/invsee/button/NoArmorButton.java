@@ -1,7 +1,7 @@
 package club.flame.disqualified.menu.invsee.button;
 
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
 import lombok.AllArgsConstructor;
 import org.bukkit.Color;
 import org.bukkit.Material;

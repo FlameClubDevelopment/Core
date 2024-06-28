@@ -2,8 +2,8 @@ package club.flame.disqualified.menu.color.namecolor.buttons;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import lombok.AllArgsConstructor;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -18,6 +18,7 @@ import java.util.Collections;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @AllArgsConstructor
 public class ItalicBoldButton extends Button {
 

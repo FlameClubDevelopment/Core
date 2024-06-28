@@ -1,7 +1,7 @@
 package club.flame.disqualified.manager.chat;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.config.ConfigCursor;
+import club.flame.disqualified.lib.config.ConfigCursor;
 import lombok.Getter;
 import lombok.Setter;
 

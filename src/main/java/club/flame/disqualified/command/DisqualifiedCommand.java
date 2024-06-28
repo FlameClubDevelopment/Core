@@ -1,11 +1,11 @@
 package club.flame.disqualified.command;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
-import club.frozed.lib.commands.Completer;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.commands.Completer;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;

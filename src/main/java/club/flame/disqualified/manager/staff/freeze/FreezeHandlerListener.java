@@ -3,7 +3,7 @@ package club.flame.disqualified.manager.staff.freeze;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.event.freeze.PlayerFreezeMoveEvent;
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.config.ConfigCursor;
+import club.flame.disqualified.lib.config.ConfigCursor;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

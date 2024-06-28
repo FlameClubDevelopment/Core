@@ -2,7 +2,7 @@ package club.flame.disqualified.manager.database.redis;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.database.redis.payload.RedisListener;
-import club.frozed.lib.config.ConfigCursor;
+import club.flame.disqualified.lib.config.ConfigCursor;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import redis.clients.jedis.Jedis;

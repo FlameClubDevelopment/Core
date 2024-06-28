@@ -1,7 +1,7 @@
 package club.flame.disqualified.menu.punishments.button;
 
 import club.flame.disqualified.manager.player.punishments.Punishment;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.menu.Button;
 import lombok.AllArgsConstructor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -12,6 +12,7 @@ import org.bukkit.inventory.ItemStack;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @AllArgsConstructor
 public class PunishmentInfoButton extends Button {
 

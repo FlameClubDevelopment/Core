@@ -2,10 +2,10 @@ package club.flame.disqualified.command.messages;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.messages.PlayerMessage;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.task.TaskUtil;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

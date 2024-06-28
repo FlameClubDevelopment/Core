@@ -3,9 +3,9 @@ package club.flame.disqualified.command.messages;
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.menu.chat.MessagesSettingsMenu;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 

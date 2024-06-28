@@ -2,11 +2,11 @@ package club.flame.disqualified.manager.player.punishments;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.Utils;
 import club.flame.disqualified.utils.punishment.PunishmentUtil;
 import club.flame.disqualified.utils.time.DateUtils;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.task.TaskUtil;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.command.CommandSender;

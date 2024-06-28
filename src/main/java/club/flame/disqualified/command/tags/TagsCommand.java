@@ -2,10 +2,10 @@ package club.flame.disqualified.command.tags;
 
 import club.flame.disqualified.Disqualified;
 import club.flame.disqualified.menu.tags.TagsMenu;
-import club.frozed.lib.commands.BaseCommand;
-import club.frozed.lib.commands.Command;
-import club.frozed.lib.commands.CommandArgs;
-import club.frozed.lib.commands.Completer;
+import club.flame.disqualified.lib.commands.BaseCommand;
+import club.flame.disqualified.lib.commands.Command;
+import club.flame.disqualified.lib.commands.CommandArgs;
+import club.flame.disqualified.lib.commands.Completer;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;

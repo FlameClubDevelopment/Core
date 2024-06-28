@@ -1,12 +1,12 @@
 package club.flame.disqualified.manager.player.punishments;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.Utils;
 import club.flame.disqualified.utils.time.DateUtils;
 import club.flame.disqualified.utils.time.TimeUtil;
-import club.frozed.lib.config.ConfigCursor;
-import club.frozed.lib.item.ItemCreator;
+import club.flame.disqualified.lib.config.ConfigCursor;
+import club.flame.disqualified.lib.item.ItemCreator;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

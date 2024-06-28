@@ -5,8 +5,8 @@ import club.flame.disqualified.manager.player.punishments.PunishmentType;
 import club.flame.disqualified.menu.punishments.button.PlayerAltsButton;
 import club.flame.disqualified.menu.punishments.button.PlayerInfoButton;
 import club.flame.disqualified.menu.punishments.button.PunishmentTypeButton;
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.menu.Menu;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.menu.Menu;
 import lombok.AllArgsConstructor;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -19,6 +19,7 @@ import java.util.Map;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @AllArgsConstructor
 public class PunishmentsMenu extends Menu {
 

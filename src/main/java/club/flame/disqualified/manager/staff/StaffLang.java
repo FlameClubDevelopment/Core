@@ -1,7 +1,7 @@
 package club.flame.disqualified.manager.staff;
 
 import club.flame.disqualified.Disqualified;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 

@@ -1,6 +1,6 @@
 package club.flame.disqualified.manager.event.freeze;
 
-import club.frozed.lib.event.PlayerEvent;
+import club.flame.disqualified.lib.event.PlayerEvent;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.entity.Player;

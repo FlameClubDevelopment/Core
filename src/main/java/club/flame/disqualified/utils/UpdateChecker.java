@@ -1,7 +1,7 @@
 package club.flame.disqualified.utils;
 
 import club.flame.disqualified.Permissions;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

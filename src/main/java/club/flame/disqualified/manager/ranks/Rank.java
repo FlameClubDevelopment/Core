@@ -19,6 +19,7 @@ import java.util.List;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @Getter
 @Setter
 public class Rank {

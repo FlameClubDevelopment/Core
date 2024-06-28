@@ -5,10 +5,10 @@ import club.flame.disqualified.manager.database.redis.payload.Payload;
 import club.flame.disqualified.manager.database.redis.payload.RedisMessage;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.player.grants.Grant;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.config.FileConfig;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.config.FileConfig;
 import club.flame.disqualified.utils.lang.Lang;
-import club.frozed.lib.task.TaskUtil;
+import club.flame.disqualified.lib.task.TaskUtil;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.UpdateOptions;
 import org.bson.Document;
@@ -27,6 +27,7 @@ import java.util.stream.Collectors;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class RankManager {
 
     public void loadRanks() {

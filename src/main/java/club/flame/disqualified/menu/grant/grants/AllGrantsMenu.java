@@ -3,13 +3,13 @@ package club.flame.disqualified.menu.grant.grants;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.player.grants.Grant;
 import club.flame.disqualified.menu.grant.grants.button.GrantsInfoButton;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.menu.buttons.AirButton;
-import club.frozed.lib.menu.buttons.BackButton;
-import club.frozed.lib.menu.buttons.PageInfoButton;
-import club.frozed.lib.menu.pagination.PageButton;
-import club.frozed.lib.menu.pagination.PaginatedMenu;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.menu.buttons.AirButton;
+import club.flame.disqualified.lib.menu.buttons.BackButton;
+import club.flame.disqualified.lib.menu.buttons.PageInfoButton;
+import club.flame.disqualified.lib.menu.pagination.PageButton;
+import club.flame.disqualified.lib.menu.pagination.PaginatedMenu;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
@@ -20,6 +20,7 @@ import java.util.*;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class AllGrantsMenu extends PaginatedMenu {
 
     private PlayerData targetplayerData;

@@ -3,11 +3,11 @@ package club.flame.disqualified.menu.grant.procedure;
 import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.player.grants.GrantProcedure;
 import club.flame.disqualified.manager.player.grants.GrantProcedureState;
-import club.frozed.lib.chat.CC;
+import club.flame.disqualified.lib.chat.CC;
 import club.flame.disqualified.utils.grant.WoolUtil;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
-import club.frozed.lib.menu.Menu;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
+import club.flame.disqualified.lib.menu.Menu;
 import club.flame.disqualified.utils.time.DateUtils;
 import lombok.AllArgsConstructor;
 import org.bukkit.ChatColor;
@@ -24,6 +24,7 @@ import java.util.Map;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class GrantDurationMenu extends Menu {
 
     private PlayerData targetData;

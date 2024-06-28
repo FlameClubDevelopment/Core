@@ -19,6 +19,7 @@ import java.util.List;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class PunishmentUtil {
 
     public static Punishment getPunishmentToString(String string) {

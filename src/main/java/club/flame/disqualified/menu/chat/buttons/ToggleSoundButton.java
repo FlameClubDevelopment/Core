@@ -1,8 +1,8 @@
 package club.flame.disqualified.menu.chat.buttons;
 
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -15,6 +15,7 @@ import java.util.Collections;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class ToggleSoundButton extends Button {
 
     private PlayerData playerData;

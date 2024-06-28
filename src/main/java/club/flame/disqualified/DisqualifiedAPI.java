@@ -15,6 +15,7 @@ import java.util.List;
  * Project: Disqualified
  * Credits: FCD and FrozedLib
  */
+
 public class DisqualifiedAPI {
 
     public static String getLastServer(Player player) {

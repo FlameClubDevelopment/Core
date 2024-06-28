@@ -1,8 +1,8 @@
 package club.flame.disqualified.menu.invsee.button;
 
 import club.flame.disqualified.utils.Utils;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.Material;

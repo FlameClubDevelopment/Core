@@ -1,9 +1,9 @@
 package club.flame.disqualified.menu.chat.buttons;
 
 import club.flame.disqualified.manager.player.PlayerData;
-import club.frozed.lib.chat.CC;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.chat.CC;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -16,6 +16,7 @@ import java.util.List;
  * Project: Disqualified
  * Credits: FCD
  */
+
 public class IgnoreListButton extends Button {
 
     private PlayerData playerData;

@@ -4,8 +4,8 @@ import club.flame.disqualified.manager.player.PlayerData;
 import club.flame.disqualified.manager.player.punishments.PunishmentType;
 import club.flame.disqualified.menu.punishments.PunishmentFilter;
 import club.flame.disqualified.menu.punishments.menus.PunishmentsListMenu;
-import club.frozed.lib.item.ItemCreator;
-import club.frozed.lib.menu.Button;
+import club.flame.disqualified.lib.item.ItemCreator;
+import club.flame.disqualified.lib.menu.Button;
 import lombok.AllArgsConstructor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -17,6 +17,7 @@ import org.bukkit.inventory.ItemStack;
  * Project: Disqualified
  * Credits: FCD
  */
+
 @AllArgsConstructor
 public class PunishmentTypeButton extends Button {
 
