@@ -13,10 +13,27 @@ Disqualified is a Minecraft plugin designed to enhance server functionality with
 
 ## Features
 
-- **Chat Management**: Manage chat settings and commands.
-- **Social Media Integration**: Quick access to server's social media links.
-- **Link Restriction**: Prevents players from sending links in chat.
-- **Sound Notifications**: Plays sounds for various events.
+- Optimized
+- Staff Server Switch/Join Notification
+- Staff and Admin Chat
+- Rank System (with /grants and /setrank)
+- Coins System (with coins manager)
+- Chat Control (with chat mute, slow and more)
+- Name and Chat Color
+- Essentials Commands (/bc, /report, /freeze and more)
+- Inventory Commands (/invsee, /ci, /ec, /fix and more)
+- Msg Commands (/tpm, /ignore, /socialspy and more)
+- General Commands (/announce, /playerinfo)
+- Punishment System (/alts, /check, and more)
+- Social Commands (/discord, /store, /ts and more)
+- NameMC System (/vote with rewards)
+- Tags System (/tags or /prefix)
+- Teleport Commands (/tphere, /top, /tpall and more)
+- Time Commands (/day, /night and /sunset)
+- Tips System
+- Discord Webhook
+- Redis System
+- Customizable messages
 
 ## Installation
 
@@ -35,6 +52,8 @@ Disqualified is a Minecraft plugin designed to enhance server functionality with
 3. **Deploy the Plugin**:
     Copy the generated JAR file from the `target` directory to your server's `plugins` directory.
 
+- Note: You need the Libs.
+
 ## Configuration
 
 Configure the plugin by editing the `config.yml` file in the `plugins/Disqualified` directory. Set your server name, social media links, and other settings as needed.
@@ -52,3 +71,7 @@ Social media links are configurable and can be accessed via specific commands.
 ### Link Restriction
 
 The plugin prevents players from sending links in chat by default. You can customize the message and behavior in the configuration file.
+
+## Credits
+
+- Original Plugin: https://github.com/FrozedClubDevelopment/Zoom
