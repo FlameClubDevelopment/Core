@@ -10,6 +10,7 @@ Disqualified is a Minecraft plugin designed to enhance server functionality with
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Important Notice](#important)
 
 ## Features
 
@@ -74,4 +75,8 @@ The plugin prevents players from sending links in chat by default. You can custo
 
 ## Credits
 
-- Original Plugin: https://github.com/FrozedClubDevelopment/Zoom
+Original Plugin: https://github.com/FrozedClubDevelopment/Zoom
+
+## Important
+
+This is an old version of the original project, visit https://github.com/FlameClubDevelopment/Disqualified for more information
